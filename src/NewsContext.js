@@ -10,7 +10,6 @@ export const NewsContextProvider = (props) => {
   useEffect(() => {
     axios
       .get(
-      
       `https://newsapi.org/v2/everything?q=tesla&from=2023-02-23&sortBy=publishedAt&apiKey=${apiKey}`
       )
       .then((response) => setData(response.data))
